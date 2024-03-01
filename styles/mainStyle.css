@@ -1,0 +1,438 @@
+:root {
+  --presentation-section-height: 55vh;
+}
+
+.dappContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow: clip scroll;
+}
+
+.introSection {
+  position: relative;
+  height: var(--presentation-section-height);
+}
+
+.bg-striped {
+  background-image: linear-gradient(
+    #e63a39 0%,
+    #e63a39 20%,
+    #ffffff 20%,
+    #ffffff 40%,
+    #e63a39 40%,
+    #e63a39 60%,
+    #ffffff 60%,
+    #ffffff 80%,
+    #e63a39 80%,
+    #e63a39 100%
+  );
+}
+
+.flag-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  touch-action: none;
+}
+
+.flag-wrapper img {
+  width: fit-content;
+  height: auto;
+}
+
+@media screen and (max-width: 95em) {
+  .flag-wrapper,
+  .flag-wrapper img {
+    display: none;
+  }
+}
+
+.presentation-imgs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: var(--presentation-section-height);
+}
+
+.presentation-imgs-container img {
+  width: fit-content;
+  height: auto;
+  object-fit: scale-down;
+}
+
+.contractSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  background-color: var(--us-navy);
+  user-select: text;
+}
+
+span.contract-icon-wrapper {
+  width: fit-content;
+  height: auto;
+}
+
+svg.contract-icon {
+  width: 3.25rem;
+}
+
+span.contract-label {
+  font-size: var(--default-label-size);
+  font-weight: var(--bodycopy-weight-extrabold);
+  text-transform: uppercase;
+}
+
+a.contract-address-link {
+  font-size: var(--default-label-size);
+}
+
+.bannerSection {
+  background-color: var(--us-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+}
+
+.five-star-h,
+.five-star-v {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.five-star-v {
+  flex-direction: column;
+}
+
+.projectDetailsSection {
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+img.secondaryLogo {
+  max-height: 33rem;
+  object-fit: scale-down;
+}
+
+.tokenomicsDetailsSection {
+  display: flex;
+  background-color: var(--us-blue);
+  border: 2px solid var(--us-blue);
+  border-radius: 0.75rem;
+}
+
+.tokenomics-card-decoration {
+  display: flex;
+  padding-block: 3rem;
+  padding-inline: 2.5rem;
+}
+
+.tokenomicsDetails {
+  background-color: var(--us-white);
+  padding-block: 1.5rem;
+  padding-inline: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tokenomicsDetailsMotto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--us-blue);
+  padding-block: 3rem;
+  padding-inline: 3rem;
+  border-radius: 0.75rem;
+}
+
+.tokenomicsDetailsMotto > h1,
+.tokenomicsDetailCard-title,
+.tokenomicsDetailCard-bodycopy,
+.tokenomicsDetailCard-contractInfo > h1 {
+  margin-block-end: unset;
+  white-space: nowrap;
+}
+
+.standart-title {
+  font-family: var(--title-font);
+  font-weight: var(--title-weight-bold, 700);
+  font-size: var(--default-title-font-size);
+  line-height: var(--default-title-line-height);
+  text-transform: uppercase;
+}
+
+.tokenomicsLinksWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul.tokenomicsLinks {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  list-style: none;
+}
+
+.tokenomicsLink {
+  padding-inline: 1.5rem;
+  height: 5rem;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.tokenomicsLinkTextWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tokenomicsLinkDesc {
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  line-height: 0.625rem;
+}
+.tokenomicsLinkLabel {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  font-weight: var(--bodycopy-weight-extrabold);
+}
+
+.tokenomicsLinkLabel > sub,
+.tokenomicsLinkLabel-subtext {
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+}
+
+.tokenomicsDetailCardsWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tokenomicsDetailCard {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1.5rem;
+  padding-inline: 1.5rem;
+  border-radius: 0.75rem;
+  width: 30rem;
+}
+
+.tokenomicsDetailCardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.tokenomicsDetailCard-title {
+  font-family: var(--title-font);
+  font-weight: var(--title-weight-bold, 700);
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+}
+
+.tokenomicsDetailCard-bodycopy {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.tokenomicsDetailsCardIconWrapper {
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  border-radius: 0.75rem;
+}
+
+a.tokenomicsDetailCard-contract-address {
+  font-size: 0.75rem;
+}
+
+.tokenomicsDetailCard-contractInfo > h1 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding-block-start: 0.5rem;
+}
+
+footer.footerSection {
+  position: relative;
+  min-height: var(--presentation-section-height);
+  background-color: var(--us-dark-navy);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-flag-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  touch-action: none;
+}
+
+.footer-flag-wrapper img {
+  width: fit-content;
+  height: auto;
+}
+
+@media screen and (max-width: 95em) {
+  .footer-flag-wrapper,
+  .footer-flag-wrapper img {
+    display: none;
+  }
+}
+
+.legalInfoSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: max-content;
+}
+
+.legalInfoTitle h1 {
+  margin-block-end: unset;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.legalInfoBodyCopyWrapper {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+}
+
+.legalInfoBodyCopyWrapper p {
+  margin-block-end: unset;
+  width: 30rem;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+}
+
+@media screen and (max-width: 90em) {
+  .projectDetailsSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tokenomicsDetailsSection {
+    flex-direction: column;
+    max-width: 95vw;
+  }
+
+  .five-star-v {
+    flex-direction: row;
+  }
+
+  .tokenomics-card-decoration {
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+  }
+
+  .tokenomicsDetailCardsWrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tokenomicsLinksWrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  ul.tokenomicsLinks {
+    flex-direction: column;
+  }
+
+  .tokenomicsDetails {
+    justify-content: center;
+    align-items: center;
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
+  }
+
+  .tokenomicsDetailsMotto > h1 {
+    font-size: 1.125rem;
+    white-space: normal;
+  }
+
+  .tokenomicsDetailsMotto {
+    flex-direction: column;
+    gap: 1rem;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    width: 103%;
+    border-radius: unset;
+    text-align: center;
+  }
+
+  .tokenomicsDetailsMotto > .star-icon {
+    display: none;
+  }
+
+  .tokenomicsLink {
+    border-radius: unset;
+  }
+
+  .tokenomicsLinks > li {
+    width: 100%;
+  }
+
+  .tokenomicsDetailCard {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    width: 100%;
+    border-radius: unset;
+  }
+
+  br {
+    display: none;
+  }
+
+  p.tokenomicsDetailCard-bodycopy {
+    white-space: normal;
+  }
+
+  .tokenomicsDetailCard-title {
+    white-space: normal;
+  }
+
+  .tokenomicsDetailsCardIconWrapper {
+    width: max-content;
+  }
+
+  .footerLinksSection > .tokenomicsLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+}

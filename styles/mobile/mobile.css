@@ -1,0 +1,191 @@
+:root {
+  --default-font-size: 0.875rem;
+  --default-line-height: 1.25rem;
+
+  --default-title-font-size: 1.25rem;
+  --default-title-line-height: 1.5rem;
+
+  --default-label-size: 1rem;
+
+  --presentation-section-height: 70vh;
+}
+
+html {
+  font-size: 112.5%; /* 18px */
+  line-height: 1.45;
+}
+
+.presentation-imgs-container {
+  flex-direction: column;
+}
+
+img.mainLogo {
+  height: 20rem;
+}
+
+.contractSection {
+  flex-direction: column;
+}
+
+svg.contract-icon {
+  width: 2.5rem;
+}
+
+.bannerSection {
+  flex-direction: column;
+}
+
+.projectDetailsSection {
+  flex-direction: column;
+  align-items: center;
+}
+
+.tokenomicsDetailsSection {
+  flex-direction: column;
+  max-width: 95vw;
+}
+
+.five-star-v {
+  flex-direction: row;
+}
+
+.tokenomics-card-decoration {
+  justify-content: center;
+  align-items: center;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+
+.tokenomicsDetailCardsWrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tokenomicsLinksWrapper {
+  flex-direction: column;
+  width: 100%;
+}
+
+ul.tokenomicsLinks {
+  flex-direction: column;
+}
+
+.tokenomicsDetails {
+  justify-content: center;
+  align-items: center;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+}
+
+.tokenomicsDetailsMotto > h1 {
+  font-size: 1.125rem;
+  white-space: normal;
+}
+
+.tokenomicsDetailsMotto {
+  flex-direction: column;
+  gap: 1rem;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  width: 103%;
+  border-radius: unset;
+  text-align: center;
+}
+
+.tokenomicsDetailsMotto > .star-icon {
+  display: none;
+}
+
+.tokenomicsLink {
+  border-radius: unset;
+}
+
+.tokenomicsLinks > li {
+  width: 100%;
+}
+
+.tokenomicsDetailCard {
+  flex-direction: column-reverse;
+  gap: 1rem;
+  width: 100%;
+  border-radius: unset;
+}
+
+br {
+  display: none;
+}
+
+p.tokenomicsDetailCard-bodycopy {
+  white-space: normal;
+}
+
+.tokenomicsDetailCard-title {
+  white-space: normal;
+}
+
+.tokenomicsDetailsCardIconWrapper {
+  width: max-content;
+}
+
+.legalInfoBodyCopyWrapper {
+  flex-direction: column;
+}
+
+.footerLinksSection > .tokenomicsLinks {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 40em) {
+  :root {
+    --default-font-size: 0.875rem;
+    --default-line-height: 1.25rem;
+
+    --default-title-font-size: 1.25rem;
+    --default-title-line-height: 1.5rem;
+
+    --default-label-size: 0.7rem;
+  }
+
+  h1 {
+    min-width: 25ch;
+    max-width: 50ch;
+  }
+
+  .contractSection {
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .legalInfoSection {
+    width: 90vw;
+  }
+
+  .legalInfoBodyCopyWrapper {
+    width: 100%;
+  }
+
+  .legalInfoBodyCopyWrapper p {
+    width: 100%;
+  }
+
+  .tokenomicsDetailCard {
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
+    width: 93vw;
+  }
+
+  a.tokenomicsDetailCard-contract-address {
+    font-size: 0.65rem;
+  }
+
+  .footerLinksSection > .tokenomicsLinks {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 23em) {
+  .footerLinksSection > .tokenomicsLinks {
+    grid-template-columns: 1fr;
+  }
+}

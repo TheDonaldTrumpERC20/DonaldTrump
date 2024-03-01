@@ -1,0 +1,142 @@
+:root {
+  --standart-text-color: hsla(0, 0%, 96%, 1);
+  --standart-selection-bgColor: hsla(0, 78%, 56%, 1);
+
+  --pure-white: hsla(0, 0%, 100%, 1);
+  --tokenomics-link-bgColor: hsla(223, 57%, 90%, 1);
+  --us-white: hsla(223, 57%, 99%, 1);
+  --us-red: hsla(0, 78%, 56%, 1);
+  --us-blue: hsla(224, 56%, 29%, 1);
+  --us-navy: hsla(224, 56%, 25%, 1);
+  --us-dark-navy: hsla(224, 56%, 5%, 1);
+
+  --standart-font: "Manrope", sans-serif;
+  --title-font: "Playfair Display", serif;
+
+  --title-weight-bold: 700;
+
+  --bodycopy-weight-light: 300;
+  --bodycopy-weight-bold: 700;
+  --bodycopy-weight-extrabold: 800;
+
+  --default-font-size: 1rem;
+  --default-line-height: 1.5rem;
+  --default-letter-spacing: 0.0125em;
+
+  --default-title-font-size: 2rem;
+  --default-title-line-height: 2.25rem;
+
+  --default-label-size: 1.5rem;
+}
+/* * CSS Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--standart-font);
+  color: var(--standart-text-color);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  user-select: none;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-drag: none;
+}
+
+/* Hide scrollbar visibility */
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-button,
+*::-webkit-scrollbar-corner,
+*::-webkit-resizer {
+  display: none;
+}
+
+html {
+  overflow: clip scroll;
+}
+
+body {
+  position: relative;
+  font-size: var(--default-font-size);
+  line-height: var(--default-line-height);
+}
+
+p,
+h1,
+h2,
+h3,
+blockquote {
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+  text-wrap: pretty;
+  hyphens: auto;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+}
+
+strong {
+  font-weight: var(--bodycopy-weight-bold, 700);
+}
+
+h1 {
+  font-size: var(--default-title-font-size);
+  line-height: var(--default-title-line-height);
+  text-transform: capitalize;
+  min-width: 25ch;
+  max-width: 38ch;
+}
+
+p {
+  min-width: 25ch;
+  max-width: 75ch;
+  letter-spacing: var(--default-letter-spacing);
+}
+
+/* Vertical Rhythm */
+h1,
+h2,
+h3,
+p {
+  margin-block-end: var(--default-line-height);
+}
+
+img {
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  touch-action: none;
+}
+
+.hanging-punctuation {
+  text-indent: -0.65ch;
+}
+.selectable-text,.selectable-text-reverse {
+  user-select: text;
+}
+.selectable-text::selection {
+  background: var(--standart-selection-bgColor);
+}
+
+.selectable-text-reverse::selection {
+  color: var(--standart-selection-bgColor);
+  background: var(--standart-text-color);
+}
